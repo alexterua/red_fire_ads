@@ -1,0 +1,41 @@
+.button {
+    display: block;    
+    padding-bottom: 13px;
+        
+    text-align: center;
+    line-height: 0;
+    border-radius: 20px;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: $white;
+    cursor: pointer;
+    transition: all ease 0.5s;    
+
+    &.disabled,
+    &:disabled {
+        cursor: default;
+        opacity: 0.5;
+        background-color: $white;
+    }
+
+    &--black {
+        background-color: $black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: lighten($color: $black, $amount: 20%);
+        }
+    }
+
+    &--red {
+        background-color: $red;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: lighten($color: $red, $amount: 10%);
+        }
+    }
+}

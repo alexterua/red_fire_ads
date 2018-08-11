@@ -1,0 +1,18 @@
+.bg {
+    min-height: 10628px; // убрать после наполнения контента
+    background-image: url("../img/backgrounds/bg-bottom.png");
+    background-repeat: no-repeat;
+    background-position: 0 530px;
+    background-size: cover;
+    
+    &__top {
+        background-image: url("../img/backgrounds/bg-top.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+    
+    &__title {
+        padding-top: 178px;
+        padding-bottom: 177px;
+    }
+}

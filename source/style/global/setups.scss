@@ -40,9 +40,13 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: normal;
-  text-transform: uppercase;
-  font-family: 'LatoRegular', Arial, sans-serif;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
   font-weight: normal;
+}
+
+h1 {
+  font-size: 70px;
+  color: $white;  
 }
 
 img {
@@ -74,14 +78,10 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1140px;    
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 49px;
+  padding-right: 42px;
 }
 
 .flex-block {
-  min-height: 100px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }

@@ -1,0 +1,36 @@
+.header {
+    position: relative;
+    min-height: 170px;
+    margin-bottom: 90px;
+
+    &__logo {
+        
+    }
+
+    &__fonts {
+        padding-left: 19px;
+        padding-top: 28px;
+    }
+
+    &__colors {
+        padding-left: 35px;
+        padding-top: 28px;
+    }
+
+    &__button {
+        margin-left: 10px;
+        align-self: flex-end;
+        width: 140px;
+        height: 38px;
+        padding-top: 18px;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 868px;
+        height: 1px;
+        background-color: #222222;
+        bottom: 0;
+    }
+}

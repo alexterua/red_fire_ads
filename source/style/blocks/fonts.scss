@@ -1,0 +1,50 @@
+.fonts {
+    width: 366px;
+    line-height: 20px;   
+
+    &__title {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    &__list {
+        column-count: 2;
+        line-height: 30px;
+    }
+
+    &__item { 
+        padding-right: 16px; 
+
+        &:nth-child(1) {
+            font-family: 'echoes_sans', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        &:nth-child(2) {
+            font-family: 'Quicksand', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        &:nth-child(3) {
+            font-family: 'Quicksand', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        &:nth-child(4) {
+            font-family: 'Open+Sans', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        &:nth-child(5) {
+            font-family: 'Open+Sans', Arial, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}

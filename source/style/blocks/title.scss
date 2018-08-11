@@ -1,0 +1,39 @@
+.title__main {
+    max-width: 521px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 82px;   
+}
+
+.title__name {
+    font-weight: 700;
+
+    &--dash {
+        padding-left: 16px;
+    }
+}
+
+.title__about {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    color: $black;
+    padding-top: 7px;
+    padding-bottom: 30px;
+}
+
+.title__infographic {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: $text-grey;
+    padding-top: 40px;
+    padding-bottom: 92px;
+    font-size: 63px;
+    line-height: 40px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,79 @@
+.infographic {
+    margin-bottom: 90px;
+
+    &__name--small {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+    }
+
+    &__text {
+        position: relative;
+        display: block;
+        width: 246px;
+        font-family: 'Quicksand', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: $text-grey;
+        text-transform: uppercase;
+        
+        
+
+        &:nth-child(1) {
+            margin-left: 40.5%;
+            padding-top: 0.7%;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 255px;
+                height: 96px;
+                border: 1px solid $infografic;
+                background-image: url("../img/infographic/buy-online.png");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                left: -434px;
+                top: -14px;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-left: 50.2%;
+            padding-top: 1.4%;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 255px;
+                height: 96px;
+                border: 1px solid $infografic;
+                background-image: url("../img/infographic/hand-graving-smartphone.png");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                left: -539px;
+                top: 68px;
+            }
+
+        }
+
+        &:nth-child(3) {
+            margin-left: 40.5%;
+            padding-top: 1.9%;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 269px;
+                height: 96px;
+                border: 1px solid $infografic;
+                background-image: url("../img/infographic/world.png");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                right: -399px;
+                top: -75px;
+            }
+        }
+    }
+}
