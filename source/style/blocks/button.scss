@@ -11,14 +11,7 @@
     font-size: 20px;
     color: $white;
     cursor: pointer;
-    transition: all ease 0.5s;    
-
-    &.disabled,
-    &:disabled {
-        cursor: default;
-        opacity: 0.5;
-        background-color: $white;
-    }
+    transition: all ease 0.5s;
 
     &--black {
         background-color: $black;
