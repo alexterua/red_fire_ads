@@ -1,0 +1,95 @@
+.adaptive {
+    position: relative;
+    min-height: 890px;
+    padding-top: 430px;
+
+    background-image: url("../img/backgrounds/bg-adaptive.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    &__name--small {
+        position: relative;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 253px;
+            background-color: $infografic;
+            left: 230px;
+            top: 64px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #921717;
+            border: 1px solid $infografic;
+            border-radius: 50%;
+            left: 228px;
+            top: 317px;
+        }
+    }
+
+    &__name--red {
+        color: #fa361d; 
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 596px;
+        height: 559px;
+        background-image: url("../img/adaptive/tablets.png");
+        background-repeat: no-repeat;
+        top: 211px;
+        right: 536px;
+    }
+
+    &__tablet-redfireads {
+        position: absolute;
+        width: 378px;
+        height: 442px;
+        background-image: url("../img/adaptive/display-tablet-1.png");
+        background-repeat: no-repeat;
+        top: 259px;
+        left: 67px;
+    }
+
+    &__tablet-sofona {
+        position: absolute;
+        width: 378px;
+        height: 442px;
+        background-image: url("../img/adaptive/display-tablet-2.png");
+        background-repeat: no-repeat;
+        top: 259px;
+        left: 67px;
+    }
+
+    &__phone-redfireads {
+        position: absolute;
+        width: 201px;
+        height: 323px;
+        background-image: url("../img/adaptive/display-phone-1.png");
+        background-repeat: no-repeat;
+        top: 326px;
+        left: 402px;
+    }
+
+    &__phone-sofona {
+        position: absolute;
+        width: 201px;
+        height: 323px;
+        background-image: url("../img/adaptive/display-phone-2.png");
+        background-repeat: no-repeat;
+        top: 326px;
+        left: 402px;
+    }
+}

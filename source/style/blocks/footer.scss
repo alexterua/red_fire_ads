@@ -1,4 +1,53 @@
 .footer {
+    position: relative;
     min-height: 240px;
-    background-color: #474747;
+    background-color: $text-grey;
+    color: $white;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 160px;
+        margin-left: 506px;
+        margin-right: 265px;
+        padding-top: 37px;
+    }
+
+    &__next-project {
+        width: 240px;
+        padding-top: 54px;
+        background-color: $text-darkgrey;
+        padding-left: 76px;
+    }
+
+    &__socials {
+        padding-top: 38px;
+    }
+
+    &__copyright {
+        padding-top: 24px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 89px;
+        height: 225px;
+        background-image: url("../img/blinks/blink6.png");
+        background-repeat: no-repeat;
+        top: -1209px;
+        left: -87px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 604px;
+        height: 749px;
+        background-image: url("../img/blinks/blink7.png");
+        background-repeat: no-repeat;
+        top: -875px;
+        left: -374px;
+    }
 }

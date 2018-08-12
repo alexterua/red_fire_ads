@@ -38,4 +38,28 @@
             background-color: lighten($color: $red, $amount: 10%);
         }
     }
+
+    &__next {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/icons/right-arrow.png");
+        background-repeat: no-repeat;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+
+    &__prev {
+        display: block;
+        position: absolute;
+        transform: rotate(180deg);
+        width: 36px;
+        height: 36px;
+        background-image: url("../img/icons/right-arrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        top: 284px;
+        left: 215px;
+    }
 }

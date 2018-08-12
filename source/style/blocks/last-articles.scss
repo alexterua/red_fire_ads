@@ -1,0 +1,155 @@
+.last-articles {
+    position: relative;
+    min-height: 1024px;
+    margin-bottom: 105px;
+
+    &__title {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 500px;
+        transform: rotate(270deg);
+        top: 282px;
+        left: 794px;
+    }
+
+    &__name--red {
+        color: #fa361d;
+    }
+
+    &__name--small {
+        position: relative;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+    }
+
+    &__about-title {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 140px;
+        transform: rotate(270deg);
+        top: 484px;
+        left: 11px;
+
+        font-family: 'Roboto Condensed', Arial, sans-serif;
+        font-weight: 700;    
+        color: $red;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    &__about-us {
+        display: flex;
+        margin-left: 175px;
+        padding-top: 25px;
+        padding-bottom: 58px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 305px;
+            background-color: $infografic;
+            left: 79px;
+            top: 616px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #921717;
+            border: 1px solid $infografic;
+            border-radius: 50%;
+            left: 77px;
+            top: 921px;
+        }
+    }
+
+    &__partners,
+    &__work,
+    &__campaigns { 
+        position: relative;
+
+        font-family: 'Quicksand', Arial, sans-serif;
+        font-weight: 700;    
+        color: #595959;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 16px;
+        text-align: center;
+        
+        border-radius: 10px;
+        box-shadow: 0px 0px 0.1px 0px $black;
+        width: 203px;
+        height: 135px;
+        margin-right: 28px;
+        
+        padding-top: 82px;
+    }
+
+    &__img--bottom {
+        padding-left: 175px;
+    }
+}
+
+.partners__text,
+.work__text,
+.campaigns__text {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.partners__text::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 53px;
+    height: 53px;
+
+    background-image: url("../img/icons/worker.png");
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 77px;
+}
+
+.partners__text::after {
+    position: absolute;
+    content: "";
+    width: 82px;
+    height: 1px;
+    background-color: $infografic;
+    left: -103px;
+    top: 65px;
+}
+
+.work__text::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 53px;
+    height: 53px;
+
+    background-image: url("../img/icons/hourglass.png");
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 77px;
+}
+
+.campaigns__text::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 53px;
+    height: 53px;
+
+    background-image: url("../img/icons/campaigns.png");
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 77px;
+}

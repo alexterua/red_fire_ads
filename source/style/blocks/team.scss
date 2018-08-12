@@ -1,0 +1,95 @@
+.team {
+    min-height: 867px;
+    padding-top: 140px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+
+        &:nth-child(1) {
+            padding-top: 55px;
+        }
+
+        &:nth-child(2) {
+            padding-top: 55px;
+            padding-left: 10px;
+
+            
+            & .team__name {
+                margin-top: -23px;
+            }
+        }
+
+        &:nth-child(3) {
+            position: relative;
+            padding-top: 90px;
+            padding-left: 50px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 215px;
+                background-color: $infografic;
+                left: 151px;
+                top: -178px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 6px;
+                background-color: #921717;
+                border: 1px solid $infografic;
+                border-radius: 50%;
+                left: 149px;
+                top: 37px;
+            }
+        }
+
+        &:nth-child(4) {
+            padding-left: 60px;
+            margin-top: -95px;
+
+            & .team__name {
+                margin-top: -25px;
+            }
+        }
+    }
+
+    &__name--red {
+        color: #fa361d;
+    }
+
+    &__name--small {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+    }
+
+    &__name {
+        font-family: 'Quicksand', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: -10px;
+        padding-bottom: 20px;
+    }
+
+    &__description {        
+        width: 266px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-grey;
+        padding-left: 10px;
+        text-align: center;
+    }
+}

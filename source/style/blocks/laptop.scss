@@ -1,0 +1,74 @@
+.laptop {
+    position: relative;
+    min-height: 920px;
+    padding-top: 468px;
+
+    background-image: url("../img/backgrounds/bg-laptop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    &__name--small {
+        position: relative;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 253px;
+            background-color: $infografic;
+            left: 136px;
+            top: 76px;
+        }
+    }
+
+    &__name--red {
+        color: #fa361d; 
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 870px;
+        height: 542px;
+        background-image: url("../img/laptop/laptop.png");
+        background-repeat: no-repeat;
+        top: 169px;
+        right: 38px;
+    }
+
+    &__redfireads {
+        position: absolute;
+        width: 557px;
+        height: 388px;
+        background-image: url("../img/laptop/display-laptop-redfireads.png");
+        background-repeat: no-repeat;
+        top: 199px;
+        left: 550px;
+    }
+
+    &__bluescreen {
+        position: absolute;
+        width: 557px;
+        height: 388px;
+        background-image: url("../img/laptop/display-laptop-blue.png");
+        background-repeat: no-repeat;
+        top: 199px;
+        left: 550px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 640px;
+        height: 517px;
+        background-image: url("../img/blinks/blink2.png");
+        background-repeat: no-repeat;
+        top: -20px;
+        right: -761px;
+    }
+}

@@ -1,5 +1,6 @@
 .infographic {
-    margin-bottom: 90px;
+    position: relative;
+    margin-bottom: 130px;
 
     &__name--small {
         font-family: 'Roboto', Arial, sans-serif;
@@ -7,7 +8,7 @@
         font-size: 24px;
         line-height: 36px;
         text-transform: lowercase;
-    }
+    }    
 
     &__text {
         position: relative;
@@ -18,8 +19,6 @@
         font-size: 16px;
         color: $text-grey;
         text-transform: uppercase;
-        
-        
 
         &:nth-child(1) {
             margin-left: 40.5%;
@@ -37,30 +36,21 @@
                 left: -434px;
                 top: -14px;
             }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 155px;
+                height: 1px;
+                background-color: $infografic;
+                left: -179px;
+                top: 34px;
+            }
         }
 
         &:nth-child(2) {
             margin-left: 50.2%;
             padding-top: 1.4%;
-
-            &::before {
-                position: absolute;
-                content: "";
-                width: 255px;
-                height: 96px;
-                border: 1px solid $infografic;
-                background-image: url("../img/infographic/hand-graving-smartphone.png");
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                left: -539px;
-                top: 68px;
-            }
-
-        }
-
-        &:nth-child(3) {
-            margin-left: 40.5%;
-            padding-top: 1.9%;
 
             &::before {
                 position: absolute;
@@ -71,9 +61,94 @@
                 background-image: url("../img/infographic/world.png");
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
-                right: -399px;
-                top: -75px;
+                right: -294px;
+                top: -5px;            
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 96px;
+                height: 1px;
+                background-color: $infografic;
+                left: 174px;
+                top: 39px;
             }
         }
+
+        &:nth-child(3) {
+            margin-left: 40.5%;
+            padding-top: 1.9%;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 255px;
+                height: 96px;
+                border: 1px solid $infografic;
+                background-image: url("../img/infographic/hand-graving-smartphone.png");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                left: -434px;
+                top: -1px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 155px;
+                height: 1px;
+                background-color: $infografic;
+                left: -179px;
+                top: 45px;
+            }
+        }
+    }
+
+    &__pic-media::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #921717;
+        border: 1px solid $infografic;
+        border-radius: 50%;
+        left: -25px;
+        top: 32px;
+    }
+
+    &__pic-coverage::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #921717;
+        border: 1px solid $infografic;
+        border-radius: 50%;
+        left: 174px;
+        top: 39px;
+    }
+
+    &__pic-app::before {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #921717;
+        border: 1px solid $infografic;
+        border-radius: 50%;
+        left: -25px;
+        top: 43px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 806px;
+        height: 662px;
+        background-image: url("../img/blinks/blink1.png");
+        background-repeat: no-repeat;
+        top: 214px;
+        left: -374px;
     }
 }

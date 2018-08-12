@@ -1,0 +1,23 @@
+.slides {
+
+    display: flex;
+
+    &__pic {
+
+        &:nth-child(1) {
+            margin-left: 278px;
+            margin-top: 110px;
+        }
+
+        &:nth-child(2) {
+            margin-left: 20px;
+            margin-top: 150px;
+        }
+
+        &:nth-child(3) {
+            margin-left: 40px;
+            margin-top: 240px;
+        }
+
+    }    
+}

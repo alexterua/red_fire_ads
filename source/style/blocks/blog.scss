@@ -1,0 +1,23 @@
+.blog {
+    position: relative;
+    min-height: 647px;
+    background-image: url("../img/blog/blog-bg.jpg");
+    background-repeat: no-repeat;
+
+    &__name--small {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+    }
+
+    &__title {
+        position: absolute;
+        content: "";
+        display: block;
+        transform: rotate(270deg);
+        top: 278px;
+        left: -27px;
+    }
+}

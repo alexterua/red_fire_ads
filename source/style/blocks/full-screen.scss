@@ -1,0 +1,56 @@
+.full-screen {
+    position: relative;
+    min-height: 3850px;
+
+    &__name--red {
+        color: #fa361d;
+    }
+
+    &__name--small {
+        position: relative;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: lowercase;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 1170px;
+            height: 945px;
+            background-image: url("../img/blinks/blink5.png");
+            background-repeat: no-repeat;
+            top: 1353px;
+            right: -1710px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1170px;
+        height: 945px;
+        background-image: url("../img/blinks/blink3.png");
+        background-repeat: no-repeat;
+        top: -434px;
+        left: -375px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 577px;
+        height: 466px;
+        background-image: url("../img/blinks/blink4.png");
+        background-repeat: no-repeat;
+        top: 968px;
+        right: -877px;
+    }
+}
+
+.full-screen__img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
